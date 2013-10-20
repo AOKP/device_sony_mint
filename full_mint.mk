@@ -33,9 +33,7 @@ PRODUCT_PACKAGES := \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Common Sony Resources
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
-$(call inherit-product, device/sony/common/resources-xhdpi.mk)
+$(call inherit-product, device/sony/common/resources.mk)
 
 # Inherit from mint device
 $(call inherit-product, device/sony/mint/mint.mk)
